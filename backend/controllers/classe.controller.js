@@ -1,3 +1,8 @@
 export const addClass = async( req,res)=>{
-    res.send('Class controller');
+    try {
+        const {name} = req.body;
+        
+    } catch (error) {
+        console.log('Error adding class',error.message);
+    }
 }

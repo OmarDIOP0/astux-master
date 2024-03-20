@@ -1,8 +1,8 @@
-import exprees from 'express';
+import express from 'express';
 import { addClass } from '../controllers/classe.controller.js';
 
-const router = exprees.Router();
+const router = express.Router();
 
-router.post('/add-classes',addClass);
+router.post('/new-class',addClass);
 
 export default router;
